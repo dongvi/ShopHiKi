@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="@drawable/img_bg_user"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_user"
+                android:src="@drawable/ic_user_off"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"/>
+
+            <TextView
+                android:text="Đông Vi"
+                android:layout_below="@id/img_user"
+                android:id="@+id/tv_name_of_user"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_setting"
+                android:src="@drawable/ic_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/parent_cpw"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/tv_title_change_pw"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_close_cpw"
+                    android:src="@drawable/ic_clear"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_password_old"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_pw_old"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingHorizontal="40dp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_key" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_show_pw_old"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_show" />
+
+                <ImageView
+                    android:id="@+id/btn_hide_pw_old"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_hide" />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_pw_fg"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingHorizontal="40dp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_lock_cf" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_show_pw_new"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_show" />
+
+                <ImageView
+                    android:id="@+id/btn_hide_pw_new"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_hide" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_password_cf"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingHorizontal="40dp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_lock" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_show_pw_cf"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_show" />
+
+                <ImageView
+                    android:id="@+id/btn_hide_pw_cf"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_hide" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_cpw"
+                android:textAllCaps="false"
+                android:text="@string/btn_change"
+                android:textColor="@color/white_gray"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_me"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/menu_ifo"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/btn_close_info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_clear" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/tv_name_user" />
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@id/btn_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toRightOf="@id/t1">
+
+                    <TextView
+                        android:text="Đông Vi"
+                        android:id="@+id/tv_name_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:background="@color/white"
+                        android:maxLength="35"
+                        android:maxLines="1"
+                        android:id="@+id/et_name_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btn_edit_name"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/tv_nickname_user" />
+
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@id/btn_edit_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toRightOf="@id/t2">
+
+                    <TextView
+                        android:id="@+id/tv_nickname_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ai biết"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:background="@color/white"
+                        android:maxLength="35"
+                        android:maxLines="1"
+                        android:id="@+id/et_nickname_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btn_edit_nick"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/tv_gender_user" />
+
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@id/btn_edit_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toRightOf="@id/t3">
+
+                    <TextView
+                        android:id="@+id/tv_gender_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nam"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/group_rd_gender"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:buttonTint="@color/black_violet"
+                            android:checked="true"
+                            android:id="@+id/rd_male"
+                            android:textColor="@color/black_violet"
+                            android:text="Male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:buttonTint="@color/black_violet"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/rd_female"
+                            android:textColor="@color/black_violet"
+                            android:text="Female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btn_edit_gender"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/tv_old_user" />
+
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@id/btn_edit_old"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toRightOf="@id/t4">
+
+                    <TextView
+                        android:id="@+id/tv_old_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btn_edit_old"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/tv_address_user" />
+
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@id/btn_edit_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toRightOf="@id/t5">
+
+                    <TextView
+                        android:id="@+id/tv_address_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:background="@color/white"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:id="@+id/et_address_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btn_edit_adress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="@string/tv_phone_user" />
+
+                <RelativeLayout
+                    android:layout_toLeftOf="@id/btn_edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toRightOf="@id/t6">
+
+                    <TextView
+                        android:id="@+id/tv_phone_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0338987383"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_phone_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:textColor="@color/black_violet"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btn_edit_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_save_ifo"
+                android:textAllCaps="false"
+                android:text="@string/btn_save_ifo"
+                android:textColor="@color/white_gray"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:paddingVertical="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/tv_your_order"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/btn_history"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:text="@string/tv_history"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/btn_wait_paying"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/ic_pay"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_item_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/btn_processing"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/ic_processing"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_item_process"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/btn_transporting"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/ic_transported"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_item_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/btn_response"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/ic_response"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tv_item_response"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</layout>

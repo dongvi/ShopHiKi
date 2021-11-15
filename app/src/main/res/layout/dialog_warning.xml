@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_dialog"
+        >
+
+        <RelativeLayout
+            android:background="@drawable/radius_tool_bottom"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/tv_title_wn"
+                android:textColor="#E44100"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_title"
+                android:src="@drawable/ic_warning"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:textSize="20dp"
+                    android:id="@+id/btn_cancel_wn"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white_gray"
+                    android:textAllCaps="false"
+                    android:text="@string/btn_cancel"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"/>
+
+                <Button
+
+                    android:textSize="20dp"
+                    android:id="@+id/btn_ok_wn"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white_gray"
+                    android:textAllCaps="false"
+                    android:text="@string/btn_ok"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

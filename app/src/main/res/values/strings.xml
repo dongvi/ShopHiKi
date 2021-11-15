@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">ShopHiki</string>
+    --------Home act-----
+    <string name="btn_home">Home</string>
+    <string name="btn_category">Category</string>
+    <string name="btn_cart">Cart</string>
+    <string name="btn_chat">Chat</string>
+    <string name="btn_user">Me</string>
+
+
+    -----Fragment home-------
+    <string name="hint_search">Search something ...</string>
+    <string name="tv_sale">Special discount (today only)</string>
+    <string name="tv_more_sale">More</string>
+    <string name="tv_gp">Genuine product</string>
+    <string name="tv_trend">Shopping trends</string>
+
+    <string name="tv_cgr_1">Smart phone</string>
+    <string name="tv_cgr_2">Laptop</string>
+    <string name="tv_cgr_3">Headphone</string>
+    <string name="tv_cgr_4">Earphone</string>
+    <string name="tv_cgr_5">Speaker</string>
+    <string name="tv_cgr_6">Keyboard</string>
+    <string name="tv_cgr_7">Mouse</string>
+    <string name="tv_cgr_8">Phone charger</string>
+    <string name="tv_cgr_9">Laptop charger</string>
+
+    <string name="tv_uti_cgr_1">Discount tickets</string>
+    <string name="tv_uti_cgr_2">Gift hunting every day</string>
+    <string name="tv_uti_cgr_3">Join ShopHiKi membership</string>
+    <string name="tv_uti_cgr_4">Live Stream</string>
+    <string name="tv_uti_cgr_5">Discount from 50%</string>
+
+
+    -------Dialog sign in------
+    <string name="tv_hello">Hello,</string>
+    <string name="tv_welcome">Welcome to ShopHiKi!</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="tv_sign_in">Sign in with</string>
+    <string name="tv_sign_up">If you don\'t have any account, please click </string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="tv_terms_of_use">Terms of use</string>
+    <string name="cb_remember">Remember?</string>
+    ------Dialog sign up----------
+    <string name="btn_sign_up">Sign up</string>
+    <string name="tv_sign_up_ask">Please fill in all the information, thank you!</string>
+    <string name="tv_title_group_information">Your information:</string>
+    <string name="tv_title_group_account">Your account:</string>
+    <string name="hint_fullname">Your full name</string>
+    <string name="hint_phone_number">Your phone number</string>
+    <string name="hint_birthday">Your birthday</string>
+    <string name="hint_password_cf">Confirm password</string>
+    <string name="cb_agree">I agree to the terms of use.</string>
+    <string name="btn_privacy_policy_user">privacy policy of user information</string>
+    <string name="tv_ifo_password">*Note: The password is case sensitive!</string>
+    <string name="tv_title_note_phone">About the phone number</string>
+    <string name="tv_description_note_phone">The phone number can help you in case you forgot your account.</string>
+
+    -----error-----
+    ---error name
+    <string name="tv_error_name_empty">Your name can not be empty!</string>
+    <string name="tv_error_name_length">The name must be 5 characters or more in length!</string>
+    <string name="tv_error_name_invalid">The name can not contain numbers or special characters!</string>
+    ---error phone number
+    <string name="tv_error_phone_empty">Your phone number can not be empty!</string>
+    <string name="tv_error_phone_length">The phone number must be 9 numbers or more in length!</string>
+    <string name="tv_error_phone_invalid">The phone number can not contain special characters (except for the +) or spaces!</string>
+    ---error birthday
+    <string name="tv_error_birthday_empty">Your birthday can not be empty!</string>
+    <string name="tv_error_birthday_invalid">You must be 12 years or older to use our services!</string>
+    ---error username
+    <string name="tv_error_username_empty">Your username can not be empty!</string>
+    <string name="tv_error_username_length">The username must be 5 characters or more in length!</string>
+    <string name="tv_error_username_invalid">The username can not contain special characters or spaces!</string>
+    <string name="tv_error_username_exists">This username already exists!</string>
+    ---error password
+    <string name="tv_error_password_empty">Your password can not be empty!</string>
+    <string name="tv_error_password_length">The password must be 6 characters or more in length!</string>
+    <string name="tv_error_password_lowercase">The password must contain at least 1 lowercase letter!</string>
+    <string name="tv_error_password_uppercase">The password must contain at least 1 uppercase letter!</string>
+    <string name="tv_error_password_number">The password must contain at least 1 number!</string>
+    <string name="tv_error_password_special_character">The password must contain at least 1 special character!</string>
+    <string name="tv_error_password_spaces">The password can not contain spaces!</string>
+    ---error confirm password
+    <string name="tv_error_confirm_password_empty">Your confirm password can not be empty!</string>
+    <string name="tv_error_confirm_password_incorrect">The confirm password does not match the password!</string>
+    ---error agree
+    <string name="tv_error_agree">You must agree to the terms of use!</string>
+    ---error sign in
+    <string name="tv_title_error_signin">Sign in failed!</string>
+    <string name="tv_description_error_signin">The username or password is wrong!</string>
+
+
+    ------successful----------
+    ---successful sign up
+    <string name="tv_title_successful_signup">Sign up successful!</string>
+    <string name="tv_description_successful_signup">Thank you for using our service!</string>
+    ---successful sign in
+    <string name="tv_title_successful_signin">Sign in successful!</string>
+    <string name="tv_description_successful_signin">Have a nice day! ^^</string>
+
+    -----other notification dialog--------
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="tv_title_reminder_login">You are not signed in yet!</string>
+    <string name="tv_description_reminder_login">Please sign in to continue using our service. Thanks!</string>
+
+    ----item
+    <string name="tv_sold">Sold\ </string>
+    <string name="tv_vote">No reviews yet </string>
+    <string name="tv_process1">Just opened</string>
+    <string name="tv_process2">Very little left</string>
+    <string name="tv_process3">Out of stock</string>
+    ----detail product--------
+    <string name="btn_add_to_cart">+ Add to cart</string>
+    <string name="tv_detail">Details</string>
+    <string name="tv_brand">Brand</string>
+    <string name="tv_origin">Origin</string>
+    <string name="tv_unknown">Unknown</string>
+    <string name="tv_year">Year of manufacture</string>
+    <string name="tv_warranty">Warranty information</string>
+    <string name="tv_description">Product description</string>
+    <string name="tv_pro_reviews">Product reviews</string>
+    <string name="tv_amount_reviews">\ reviews</string>
+    <string name="tv_out_of_stock">Out of stock</string>
+    <string name="tv_emoji">Emoji</string>
+    <string name="tv_reply">Reply</string>
+
+    <string name="tv_awesome">Awesome!</string>
+    <string name="tv_great">Great!</string>
+    <string name="tv_good">Good!</string>
+    <string name="tv_bad">Bad!</string>
+    <string name="tv_too_bad">Too bad!</string>
+
+    <string name="emoji_like">Like</string>
+    <string name="emoji_love">Love</string>
+    <string name="emoji_lol">Haha</string>
+    <string name="emoji_wonder">Wonder</string>
+    <string name="emoji_wow">Wow</string>
+    <string name="emoji_bad">Bad</string>
+    <string name="emoji_sad">Sad</string>
+    <string name="emoji_angry">Angry</string>
+
+    <string name="tv_more_review">More review</string>
+    <string name="tv_hide_review">Hide review</string>
+
+    <string name="tv_title_add_success">Add successful!</string>
+    <string name="tv_description_add_success">You just successfully added a product to your cart.</string>
+
+    <string name="tv_title_add_error">Add failed!</string>
+    <string name="tv_description_add_error">Sorry, this product is already in your cart.</string>
+
+    <string name="tv_title_detail_item">Product details</string>
+
+    ---------fragment cart -------
+    <string name="btn_order">Order</string>
+    <string name="tv_amount_cart">Amount:</string>
+    <string name="tv_price_cart">Price:</string>
+    <string name="tv_total_item_cart">Total:</string>
+
+    <string name="tv_total_cart">Total pay:</string>
+
+
+    <string name="tv_description_wn_remove">Are you sure you want to remove all products from your cart?</string>
+
+    ---dialog warning---
+    <string name="tv_title_wn">Warning!</string>
+
+    ---order-----
+    <string name="tv_title_order">Verification</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="hint_name_recipient">Recipient\'s name</string>
+    <string name="hint_phone_recipient">Recipient\'s phone number</string>
+    <string name="hint_address_recipient">Recipient\'s address</string>
+    <string name="hint_province_recipient">----- Province -----</string>
+    <string name="hint_district_recipient">----- District -----</string>
+    <string name="hint_town_recipient">----- Town -----</string>
+
+    <string name="btn_province">Province</string>
+    <string name="btn_district">District</string>
+    <string name="btn_town">Town</string>
+
+    <string name="hint_searching">Searching...</string>
+
+    <string name="tv_title_order_successful">Order successful!</string>
+    <string name="tv_description_order_successful">Your order will be processed and delivered to you as soon as possible. Thank you for using our service.</string>
+    <string name="title_activity_menu_system">MenuSystem</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    -------dialog forgot----------
+    <string name="tv_title_forgot">Forgot password</string>
+    <string name="tv_title_change_pw">Change password</string>
+    <string name="tv_title_error_fg">Error</string>
+    <string name="tv_description_error_fg">Your username or your phone number is wrong. Please check and try again.</string>
+    <string name="tv_description_error_fg2">You have entered the wrong the code.</string>
+    <string name="tv_description_error_fg2_1">You have entered the wrong code more than the specified number of times and have been locked out of the forgot password function for 5 minutes.</string>
+    <string name="hint_code">Enter code</string>
+
+    <string name="btn_resend">Resend</string>
+    <string name="tv_note">Note: the code is sent to your phone number. Please check your message or if you have not received the code, please press resend.</string>
+
+    <string name="tv_code_ex">Code expires after\ </string>
+    <string name="tv_seconds">\ seconds.</string>
+    <string name="tv_times_enter_code">Times to enter the code remaining:\ </string>
+
+    <string name="hint_pw_fg">New password</string>
+
+    <string name="tv_title_success_change_pw">Change password successful!</string>
+    <string name="tv_description_success_change_pw">Welcome back!</string>
+
+    -----fragment user-----
+    <string name="menu_change_pw">Change password</string>
+    <string name="menu_ifo">Your information</string>
+
+    <string name="tv_your_order">Your orders:\ </string>
+
+    <string name="tv_history">View your history</string>
+
+    <string name="tv_item_pay">Wait for pay</string>
+    <string name="tv_item_process">Processing</string>
+    <string name="tv_item_transfer">Being transported</string>
+    <string name="tv_item_response">Wait for response</string>
+
+    <string name="hint_pw_old">Old password</string>
+
+    <string name="btn_change">Change</string>
+    <string name="btn_save_ifo">Save</string>
+
+    <string name="tv_description_error_pw_old">The old password is wrong.</string>
+
+    <string name="tv_name_user">Full name:</string>
+    <string name="tv_nickname_user">Nickname:</string>
+    <string name="tv_gender_user">Gender:</string>
+    <string name="tv_old_user">Old:</string>
+    <string name="tv_address_user">Address:</string>
+    <string name="tv_phone_user">Phone number:</string>
+
+    -----fragment home-------
+    <string name="tv_menu_home_nn">Change language</string>
+    <string name="tv_menu_home_log_out">Log out</string>
+
+    <string name="tv_title_success_log_out">Log out successful!</string>
+    <string name="tv_description_success_log_out">Thank you for using our service. See you later!</string>
+
+    ------fragment category------
+
+    ----first act ----
+    <string name="tv_copyright">© Copyright belongs to VNĐ</string>
+    <string name="tv_push">Press to start!</string>
+
+
+</resources>

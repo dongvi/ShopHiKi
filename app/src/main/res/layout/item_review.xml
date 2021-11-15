@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_review"
+        android:background="@color/white"
+        app:contentPadding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/img_user"
+                    android:src="@drawable/ic_user_on"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/black_violet_weak"/>
+
+                <RatingBar
+                    android:id="@+id/vote_user"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/img_user"
+                    android:numStars="5"
+                    android:progressTint="@color/yellow2"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/tv_name_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/vote_user"
+                    android:layout_toRightOf="@id/img_user"
+                    android:text="Đông Vi"
+                    android:textColor="@color/black_violet"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/vote_user"
+                    android:text="28/02/2021"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="Chúng ta không thuộc về nhau."
+                android:background="@drawable/border5dp_gray_white"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="-38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_emoji"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="1dp"
+                    app:contentPaddingLeft="5dp"
+                    app:contentPaddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_status_emoji"
+                        android:textColor="@color/green_strong"
+                        android:text="@string/tv_emoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tv_all_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:contentPaddingLeft="5dp"
+                    app:contentPaddingRight="5dp">
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_like"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_like" />
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_love"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_love" />
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_lol"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_lol" />
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_wonder"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_wonder" />
+
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_wow"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_great" />
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_bad"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_bad" />
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_sad"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_sad" />
+
+                        <ImageView
+                            android:background="@drawable/border_emoji"
+                            android:id="@+id/btn_angry"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_angry" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_reply"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginBottom="1dp"
+                    app:contentPaddingLeft="5dp"
+                    app:contentPaddingRight="5dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:textColor="@color/green_strong"
+                        android:text="@string/tv_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tv_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    app:cardCornerRadius="5dp"
+                    app:contentPaddingBottom="2dp"
+                    app:contentPaddingLeft="5dp"
+                    app:contentPaddingRight="5dp"
+                    app:contentPaddingTop="2dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/img_emoji_top1"
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="-5dp"
+                            android:src="@drawable/ic_like" />
+
+                        <ImageView
+                            android:id="@+id/img_emoji_top2"
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="-5dp"
+                            android:src="@drawable/ic_lol" />
+
+                        <ImageView
+                            android:id="@+id/img_emoji_top3"
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_bad" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

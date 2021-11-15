@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/black_violet_weak">
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/btn_category"
+                    android:textColor="@color/white_gray"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_search"
+                android:src="@drawable/ic_search_white"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+
+            </ScrollView>
+
+
+            <ScrollView
+                android:scrollbars="none"
+                android:background="@color/bg"
+                android:paddingHorizontal="10dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btn_Smp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_smp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Smart phone"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_lap"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_lap"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Laptop"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_headp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_hp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Headphone"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_earp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_earphone"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Earphone"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_speaker"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_spker"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Speaker"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_keyb"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_keybo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Keyboard"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_phone_char"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_ph_charge"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Phone charger"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_lap_char"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_lap_cha"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="Laptop charger"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_lap_more"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_more2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:textColor="@color/black_violet_2"
+                            android:textStyle="bold"
+                            android:text="..."
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
